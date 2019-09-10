@@ -26,11 +26,52 @@ body {
 
 .header {
 	padding-top: 33px;
-	background-image: url("../football_767.jpg");
+	background-image: url("../img/football_767.jpg");
+	background-size: cover;
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .container {
 	width: 320px;
 	margin: 0 auto;
 }
+
+.logo {
+	width: 134px;
+	height: 36px;
+	margin-bottom: 136px;
+}
+
+.logo-svg {
+	fill: #ffffff;
+}
+
+.header-slogan {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 31px;
+}
+
+.header-title {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 90px;
+}
+
+.download {
+	font-size: 8px;
+	font-weight: 400;
+}
+
+.download-link {
+	font-weight: 700;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.download-link:first-child {
+	margin-bottom: 32px;
+}
+
 
