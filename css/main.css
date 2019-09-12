@@ -5,34 +5,41 @@
 }
 
 @font-face {
-	font-family: "OpenSans-regular";
-	src: "C:\Users\у\netology_diplom\fonts";
+	font-family: "OpenSans";
+	src: url("https://github.com/BadmaV/mq-diplom/blob/master/fonts/OpenSans-Regular.woff");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "OpenSans-bold";
-	src: url("../fonts/OpenSans-Bold.woff");
+	font-family: "OpenSans";
+	src: url("https://github.com/BadmaV/mq-diplom/blob/master/fonts/OpenSans-Bold.woff");
 	font-weight: bold;
 	font-style: normal;
 }
 
 body {
 	font-family: "OpenSans", sans-serif;
-	font-size: 15px;
 	color: #000000;
+	min-width: 320px;
+}
+
+.html {
+	font-size: 62.5%;
 }
 
 .header {
+	
 	background-image: url("../img/football_767.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-color: #58585f;
+	
 	width: 320px;
 	margin: 0 auto;
 	padding-top: 33px;
+	padding-bottom: 83px;
+	
 	color: #ffffff;
 	text-transform: uppercase;
 	position: relative;
@@ -52,6 +59,8 @@ body {
 }
 
 .container {
+	display: flex;
+	flex-direction: column;
 	padding-left: 20px;
 	padding-right: 20px;
 	z-index: 2;
@@ -60,41 +69,65 @@ body {
 .logo {
 	width: 134px;
 	height: 36px;
-	margin-left: auto;
-	margin-right: auto;
+	align-self: center;
 	margin-bottom: 136px;
+	z-index: 2;
 }
 
-.header-slogan {
-	font-size: 28px;
+.header-text {
 	font-weight: 700;
-	margin-bottom: 31px;
+	z-index: 2;
 }
 
 .header-title {
 	font-size: 28px;
-	font-weight: 700;
-	margin-bottom: 90px;
-	margin-left: 44px;
+	margin-bottom: 21px;
+}
+
+.header-slogan {
+	font-size: 28px;
+	margin-left: 47px;
 }
 
 .download-wrapper {
 	display: flex;
-}
-
-.download-list {
+	flex-wrap: wrap;
+	align-self: center;
 	font-size: 8px;
-	list-style: none;
-	justify-content: center;
-}
-
-.download-text {
-	font-weight: 400;
+	margin-top: 89px;
+	z-index: 2;
 }
 
 .download-link {
-	font-weight: 700;
+	display: block;
+	width: 100%;
+	height: 35px;
+	margin-bottom: 15px;
+	background-color: #5e42b0;
+	border-radius: 17px;
 	text-decoration: none;
 	color: #ffffff;
 }
+
+.download-button {
+	display: flex;
+	margin-left: 82px;
+	align-items: center;
+}
+
+.download-svg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 20px;
+	height: 25px;
+	margin-right: 9px;
+	fill: #ffffff;
+}
+
+.download-item {
+	font-weight: bold;
+	margin-top: 5px;
+}
+
 
