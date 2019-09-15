@@ -28,8 +28,9 @@ body {
 	font-size: 62.5%;
 }
 
+/*-----HEADER------*/
+
 .header {
-	
 	background-image: url("../img/football_767.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -101,7 +102,8 @@ body {
 .download-link {
 	display: block;
 	width: 100%;
-	height: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	margin-bottom: 15px;
 	background-color: #5e42b0;
 	border-radius: 17px;
@@ -130,4 +132,158 @@ body {
 	margin-top: 5px;
 }
 
+/*-----HEADER------*/
+
+.main {
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+}
+
+.athlets-title {
+	color: #e7e7e7;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.athlets-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.article-wrapper {
+	margin-top: -54px;
+}
+
+.athlets-content {
+	padding-top: 60px;
+	padding-bottom: 55px;
+}
+
+.athlets-content:first-child {
+	background-color: #fafafa;
+	padding-top: 83px;
+}
+
+.athlets-content:nth-child(2) {
+	background-color: #f5f4f9;
+}
+
+.athlets-content:last-child {
+	background-color: #5e42b0;
+}
+
+.subtitle-wrapper {
+	display: flex;
+}
+
+.subtitle-number {
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	margin-right: 10px;
+	position: relative;
+}
+
+.subtitle-number::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 17px;
+	width: 14px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #5e42b0;
+}
+
+.white-underline::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 17px;
+	width: 14px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #ffffff;
+}
+
+.subtitle {
+	font-size: 23px;
+	color: #e7e7e7;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+}
+
+.article-text {
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.article-text-white {
+	color: #ffffff;
+}
+
+.players {
+	padding-top: 22px;
+}
+
+.article-post {
+	padding-bottom: 78px;
+}
+
+.purpose-image {
+	display: flex;
+	width: 100%;
+	height: auto;
+}
+
+.square-number-wrapper {
+	position: relative;
+}
+
+.square-number {
+	position: absolute;
+	bottom: -12px;
+	left: 20px;
+	display: flex;
+	width: 70px;
+	height: 70px;
+	background-color: #5e42b0;
+}
+
+.number-item {
+	position: relative;
+	margin: auto;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.number-item::after {
+	content: "";
+	position: absolute;
+	top: 19px;
+	left: 0;
+	width: 15px;
+	height: 4px;
+	border-radius: 2px;
+	background-color: #8f7bc8;
+}
+
+.purpose-title {
+	font-size: 28px;
+	color: #eaeaea;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 35px;
+	margin-bottom: 24px;
+}
+
+.purpose-text {
+	font-size: 16px;
+}
 
