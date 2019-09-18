@@ -28,7 +28,7 @@ body {
 	font-size: 62.5%;
 }
 
-/*-----HEADER------*/
+/*--------- HEADER ----------*/
 
 .header {
 	background-image: url("../img/football_767.jpg");
@@ -36,7 +36,6 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	
-	width: 320px;
 	margin: 0 auto;
 	padding-top: 33px;
 	padding-bottom: 83px;
@@ -76,6 +75,8 @@ body {
 }
 
 .header-text {
+	display: flex;
+	justify-content: center;
 	font-weight: 700;
 	z-index: 2;
 }
@@ -93,7 +94,6 @@ body {
 .download-wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	align-self: center;
 	text-transform: uppercase;
 	font-size: 8px;
 	margin-top: 89px;
@@ -103,25 +103,23 @@ body {
 .download-link {
 	display: block;
 	width: 100%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-bottom: 15px;
+	padding: 5px calc(50% - 55px);
 	background-color: #5e42b0;
 	border-radius: 17px;
 	text-decoration: none;
 	color: #ffffff;
 }
 
+.download-link:first-child {
+	margin-bottom: 15px;
+}
+
 .download-button {
 	display: flex;
-	margin-left: 82px;
 	align-items: center;
 }
 
 .download-svg {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	width: 20px;
 	height: 25px;
 	margin-right: 9px;
@@ -133,10 +131,11 @@ body {
 	margin-top: 5px;
 }
 
-/*-----HEADER------*/
+/*--------- / HEADER ----------*/
+
+/*---------- MAIN ----------*/
 
 .main {
-	width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 25px;
@@ -151,8 +150,9 @@ body {
 }
 
 .athlets-image {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
+	overflow: hidden;
 }
 
 .article-wrapper {
@@ -288,8 +288,11 @@ body {
 	font-size: 16px;
 }
 
+/*---------/ MAIN -----------*/
+
+/*--------- FOOTER ----------*/
+
 .footer {
-	width: 320px;
 	margin: 0 auto;
 
 	background-image: url("../img/game_767.jpg");
@@ -335,6 +338,9 @@ body {
 }
 
 .footer-title-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
 	text-transform: uppercase;
 	z-index: 2;
 }
@@ -357,4 +363,45 @@ body {
 .footer-logotyp {
 	margin-top: 81px;
 	margin-bottom: 5px;
+}
+
+/*----------- / FOOTER -----------*/
+
+/*------------ TABLET ------------*/ 
+
+@media (min-width: 768px) and (max-width: 1919px) {
+	.header-title {
+		font-size: 64px;
+	}
+
+	.logo {
+		width: 207px;
+		height: 57px;
+		margin-bottom: 177px;
+	}
+
+	.header-slogan {
+		font-size: 64px;
+		margin-left: 108px;
+	}
+	
+	.download-wrapper {
+		flex-wrap: nowrap;
+	}
+
+	.download-link {
+		width: 41%;
+		padding-top: 16px;
+		padding-bottom: 18px;
+		padding-left: calc(50% - 115px);
+		border-radius: 40px;
+	}
+	.download-link:first-child {
+		margin-right: 30px;
+	}
+	.download-svg {
+		width: 36px;
+		height: 42px;
+		margin-right: 28px;
+	}
 }
