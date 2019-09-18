@@ -384,9 +384,11 @@ body {
 		font-size: 64px;
 		margin-left: 108px;
 	}
+
+	/*--- Кнопки на планшет ---*/
 	
 	.download-wrapper {
-		flex-wrap: nowrap;
+		//flex-wrap: nowrap;
 	}
 
 	.download-link {
