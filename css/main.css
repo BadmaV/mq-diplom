@@ -37,8 +37,8 @@ body {
 	background-position: center center;
 	
 	margin: 0 auto;
-	padding-top: 33px;
-	padding-bottom: 83px;
+	padding-top: 10.6%;
+	padding-bottom: 25.9%;
 	
 	color: #ffffff;
 	text-transform: uppercase;
@@ -61,8 +61,8 @@ body {
 .container {
 	display: flex;
 	flex-direction: column;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 6.25%;
+	padding-right: 6.25%;
 	z-index: 2;
 }
 
@@ -83,19 +83,21 @@ body {
 
 .header-title {
 	font-size: 28px;
-	margin-bottom: 21px;
+	letter-spacing: 1px;
 }
 
 .header-slogan {
+	display: block;
 	font-size: 28px;
-	margin-left: 47px;
+	margin-top: 15px;
+	margin-left: 1.68em;
 }
 
 .download-wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	text-transform: uppercase;
-	font-size: 8px;
+	font-size: 0.5em;
 	margin-top: 89px;
 	z-index: 2;
 }
@@ -103,7 +105,7 @@ body {
 .download-link {
 	display: block;
 	width: 100%;
-	padding: 5px calc(50% - 55px);
+	padding: 5px calc(50% - 56px);
 	background-color: #5e42b0;
 	border-radius: 17px;
 	text-decoration: none;
@@ -127,6 +129,7 @@ body {
 }
 
 .download-item {
+	display: block;
 	font-weight: bold;
 	margin-top: 5px;
 }
@@ -138,21 +141,19 @@ body {
 .main {
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 25px;
 }
 
 .athlets-title {
 	color: #e7e7e7;
 	text-transform: uppercase;
-	font-size: 50px;
+	font-size: 3.13em;
 	font-weight: 700;
-	margin-bottom: 20px;
+	margin: 25px 0 20px 20px;
 }
 
 .athlets-image {
-	width: 100%;
-	height: auto;
-	overflow: hidden;
+	display: flex;
+	margin: auto;
 }
 
 .article-wrapper {
@@ -177,6 +178,10 @@ body {
 	background-color: #5e42b0;
 }
 
+#dark-background {
+	background-color: #090c35;
+}
+
 .subtitle-wrapper {
 	display: flex;
 }
@@ -188,6 +193,10 @@ body {
 	margin-right: 10px;
 	position: relative;
 }
+
+.purple {
+		color: #8765dd;
+	}
 
 .subtitle-number::before {
 	content: "";
@@ -285,7 +294,7 @@ body {
 }
 
 .purpose-text {
-	font-size: 16px;
+	font-size: 1em;
 }
 
 /*---------/ MAIN -----------*/
@@ -346,7 +355,7 @@ body {
 }
 
 .footer-title {
-	font-size: 32px;
+	font-size: 2em;
 	font-weight: 700;
 	margin-bottom: 12px;
 }
@@ -370,40 +379,350 @@ body {
 /*------------ TABLET ------------*/ 
 
 @media (min-width: 768px) and (max-width: 1919px) {
-	.header-title {
-		font-size: 64px;
+	.header {
+		padding-bottom: 11.8%;
+	}
+
+	.container {
+		padding-right: 3.94%;
+		padding-left: 3.94%;
 	}
 
 	.logo {
 		width: 207px;
 		height: 57px;
-		margin-bottom: 177px;
+		margin-bottom: 182px;
+	}
+
+	.header-text {
+		display: flex;
+	}
+
+	.header-title {
+		font-size: 4em;
+		margin-left: 8%;
 	}
 
 	.header-slogan {
-		font-size: 64px;
-		margin-left: 108px;
+		display: block;
+		font-size: 1em;
+		margin-top: 0;
 	}
-
-	/*--- Кнопки на планшет ---*/
 	
 	.download-wrapper {
-		//flex-wrap: nowrap;
+		flex-wrap: nowrap;
+		justify-content: center;
+		margin-top: 312px;
 	}
 
 	.download-link {
-		width: 41%;
-		padding-top: 16px;
-		padding-bottom: 18px;
-		padding-left: calc(50% - 115px);
+		width: 310px;
+		padding: 16px 0 18px;
 		border-radius: 40px;
+		font-size: 14px;
 	}
+
 	.download-link:first-child {
 		margin-right: 30px;
+		margin-bottom: 0;
 	}
+
+	.download-button {
+		justify-content: center;
+	}
+
 	.download-svg {
 		width: 36px;
 		height: 42px;
 		margin-right: 28px;
 	}
+
+	/*---- tablet main ----*/
+
+	.athlets {
+		position: relative;
+	}
+
+	.tablet-athlets-title {
+		position: absolute;
+		top: 45px;
+		left: 310px;
+		font-size: 5em;
+		z-index: 3;
+	}
+
+	.athlets-wrapper {
+		display: flex;
+		position: relative;
+	}
+
+	.athlets-image {
+		position: absolute;
+		top: 40px;
+		left: -80px;
+	}
+	
+	.article-wrapper {
+		margin-top: 0;
+	}
+
+	.athlets-content {
+		padding: 44px 0 40px;
+	}
+
+	.athlets-content:first-child {
+		padding-top: 26.5%;
+}
+
+	.athlets-article-container {
+		margin-left: 292px;
+	}
+
+	.subtitle-wrapper {
+		width: 61%;
+	}
+
+	.subtitle-number {
+		font-size: 18px;
+		font-weight: 700;
+		margin-top: 5px;
+	}
+
+	.subtitle-number::before {
+		width: 21px;
+		top: 21px;
+	}
+
+	.subtitle {
+		margin-bottom: 33px;
+		font-size: 2em;
+	}
+
+	.article-text {
+		font-size: 18px;
+		margin-right: 39%;
+	}
+	
+	.players {
+		padding-top: 0;
+	}
+
+	.players-image {
+		top: 0px;
+		left: 412px;
+	}
+
+  .square-number {
+  	width: 118px;
+  	height: 118px;
+  	bottom: -35px;
+  	margin-left: 10px;
+  }
+
+  .article-post {
+  	padding-bottom: 100px;
+  }
+
+  .purpose-title {
+  	font-size: 5em;
+  	margin-top: 84px;
+  	margin-bottom: 44px;
+  }
+
+  .purpose-text {
+  	font-size: 1.5em;
+  }
+
+  .number-item {
+  	position: relative;
+  	font-size: 1.5em;
+  }
+
+  .number-item:after {
+  	content: "";
+		position: absolute;
+  	width: 26px;
+  	margin-top: 15px;
+  }
+
+  /*---- tablet footer ----*/
+
+  .footer {
+  	padding-top: 125px;
+  }
+	
+	.footer-logo-frame {
+		width: 139px;
+		height: 139px;
+		margin-bottom: 82px;
+	}
+
+	.footer-logo {
+		width: 105px;
+		height: 85px;
+	}
+
+	.footer-title {
+		font-size: 5em;
+		line-height: 55px;
+		letter-spacing: 3px;
+		margin-bottom: 28px;
+	}
+
+	.footer-tagline {
+		font-size: 2.25em;
+		margin: 0 auto;
+	}
+
+	.download-wrapper {
+		margin-top: 288px;
+	}
+
+	.footer-logotyp {
+		margin-top: 54px;
+		margin-bottom: 24px;
+	}
+
+	.players {
+		position: relative;
+	} 
+
+	.tablet-players-title {
+		position: absolute;
+		top: 45px;
+		left: 30px;
+		font-size: 5em;
+		margin: 0;
+		z-index: 2;
+	}
+}
+
+/*--------- / TABLET ---------*/
+
+/*--------- DESCTOP ----------*/
+
+@media (min-width: 1920px) {
+	.header {
+		padding-top: 2.34%;
+		padding-bottom: 5.7%;
+	}
+
+	.logo {
+		width: 194px;
+		margin-bottom: 15.36%;
+	}
+
+	.header-text {
+		justify-content: flex-start;
+		margin-left: 50px;
+	}
+
+	.header-title {
+		font-size: 90px;
+	}
+
+	.header-slogan {
+		font-size: 90px;
+		margin-top: 0;
+		margin-left: 452px;
+	}
+
+	.download-wrapper {
+		flex-wrap: nowrap;
+		justify-content: center;
+		margin-top: 222px;
+	}
+
+	.download-link {
+		width: 310px;
+		padding: 16px 0 18px;
+		border-radius: 40px;
+		font-size: 14px;
+	}
+
+	.download-link:first-child {
+		margin-right: 30px;
+		margin-bottom: 0;
+	}
+
+	.download-button {
+		justify-content: center;
+	}
+
+	.download-svg {
+		width: 36px;
+		height: 42px;
+		margin-right: 28px;
+	}
+
+	.athlets {
+		position: relative;
+	}
+
+	.tablet-athlets-title {
+		position: absolute;
+		top: 45px;
+		left: 310px;
+		font-size: 5em;
+		z-index: 3;
+	}
+
+	.athlets-wrapper {
+		display: flex;
+		position: relative;
+	}
+
+	.athlets-image {
+		position: absolute;
+		top: 40px;
+		left: -80px;
+	}
+	
+	.article-wrapper {
+		margin-top: 0;
+	}
+
+	.athlets-content {
+		padding: 44px 0 40px;
+	}
+
+	.athlets-content:first-child {
+		padding-top: 26.5%;
+}
+
+	.athlets-article-container {
+		margin-left: 292px;
+	}
+
+	.subtitle-wrapper {
+		width: 61%;
+	}
+
+	.subtitle {
+		margin-bottom: 33px;
+	}
+
+	.article-text {
+		margin-right: 39%;
+	}
+	
+	.players {
+		padding-top: 0;
+	}
+
+	.players-image {
+		top: 0px;
+		left: 412px;
+	}
+
+  .square-number {
+  	width: 118px;
+  	height: 118px;
+  	bottom: -35px;
+  	margin-left: 10px;
+  }
+
+	.athlets-content {
+  	min-width: 100vw;
+  }
 }
