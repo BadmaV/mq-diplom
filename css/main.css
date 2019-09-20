@@ -380,6 +380,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1919px) {
 	.header {
+		background-image: url("../img/football_1280.jpg");
 		padding-bottom: 11.8%;
 	}
 
@@ -490,6 +491,7 @@ body {
 
 	.subtitle-number::before {
 		width: 21px;
+		height: 5px;
 		top: 21px;
 	}
 
@@ -603,6 +605,7 @@ body {
 
 @media (min-width: 1920px) {
 	.header {
+		background-image: url("../img/football_1920.jpg");
 		padding-top: 2.34%;
 		padding-bottom: 5.7%;
 	}
