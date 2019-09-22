@@ -668,11 +668,26 @@ body {
 		position: relative;
 	}
 
-	.tablet-athlets-title {
+	.athlets-title {
 		position: absolute;
-		top: 45px;
-		left: 310px;
+		z-index: 3;
 		font-size: 5em;
+		margin-top: 5.88%;
+		margin-left: 52.5%;
+
+	}
+
+	.players {
+		position: relative;
+		padding-top: 0;
+	}
+
+	.tablet-players-title {
+		position: absolute;
+		top: 1.82%;
+		left: 4.16%;
+		font-size: 5em;
+		margin: 80px 0 0 40px;
 		z-index: 3;
 	}
 
@@ -683,8 +698,9 @@ body {
 
 	.athlets-image {
 		position: absolute;
-		top: 40px;
-		left: -80px;
+		top: 25px;
+		left: 20.3%;
+		z-index: 3;
 	}
 	
 	.article-wrapper {
@@ -714,35 +730,125 @@ body {
 	}
 
 	.athlets-article-container {
-		margin-left: 292px;
+		margin-left: 46.25%;
 	}
 
 	.subtitle-wrapper {
-		width: 61%;
+		width: 47.45%;
+	}
+
+	.subtitle-number {
+		font-size: 1.12em;
+		margin-top: 7px;
+	}
+
+	.subtitle-number::before {
+		width: 21px;
+		height: 5px;
+		top: 21px;
 	}
 
 	.subtitle {
 		margin-bottom: 33px;
+		font-size: 2.25em;
 	}
 
 	.article-text {
-		margin-right: 39%;
+		width: 100%;
+		font-size: 1.25em;
 	}
 	
-	.players {
-		padding-top: 0;
+	.purpose-article-wrapper {
+		position: relative;
+		display: flex;
+	}
+
+	.purpose-article-wrapper:nth-child(2) {
+		display: flex;
+		flex-direction: row-reverse;
 	}
 
 	.players-image {
-		top: 0px;
-		left: 412px;
+		top: 0.2%;
+		left: 42.2%;
 	}
 
-  .square-number {
-  	width: 118px;
-  	height: 118px;
-  	bottom: -35px;
-  	margin-left: 10px;
+	.article-post {
+  	padding-bottom: 0;
+  	padding-top: 10.4%;
+  }
+
+  .purpose-image {
+ 		width: 960px;
+ 	}
+	
+	.square-number-wrapper {
+		position: absolute;
+		top: 340px;
+		left: 45%;
+	}
+
+	.purpose-title {
+		font-size: 5em;
+		margin-left: 128px;
+		margin-bottom: 90px;
+	}
+
+	.purpose-text {
+		font-size: 1.5em;
+		margin-left: 128px;
+	}
+
+	.square-number {
+		width: 156px;
+		height: 156px;
+	}
+
+	.number-item {
+		font-size: 1.5em;
+	}
+
+	.number-item:after {
+  	content: "";
+		position: absolute;
+  	width: 26px;
+  	margin-top: 14px;
+  }
+
+  .footer {
+  	position: relative;
+  	padding-top: 13%;
+  }
+
+  .footer-logo-frame {
+  	position: absolute;
+  	top: 253px;
+  	left: 530px;
+  	width: 132px;
+  	height: 132px;
+  }
+
+  .footer-logo {
+		width: 105px;
+		height: 86px;
+  }
+
+  .footer-title-wrapper {
+  	margin-left: 9.16%;
+  }
+
+  .footer-title {
+  	font-size: 5em;
+  	margin-bottom: 0;
+  }
+
+  .footer-tagline {
+  	font-size: 1.87em;
+  }
+
+  .download-svg {
+  	width: 40px;
+  	height: 51px;
   }
 
 }
