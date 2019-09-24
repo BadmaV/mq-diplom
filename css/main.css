@@ -549,6 +549,10 @@ body {
   	margin-bottom: 44px;
   }
 
+  .purpose-image {
+  	min-width: 768px;
+  }
+
   .purpose-text {
   	font-size: 1.5em;
   }
@@ -584,13 +588,14 @@ body {
 
 	.footer-title {
 		font-size: 5em;
-		line-height: 55px;
+		line-height: 60px;
 		letter-spacing: 3px;
 		margin-bottom: 28px;
 	}
 
 	.footer-tagline {
 		font-size: 2.25em;
+		line-height: 35px;
 		margin: 0 auto;
 	}
 
