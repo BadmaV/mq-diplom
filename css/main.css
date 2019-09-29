@@ -77,7 +77,6 @@ body {
 .header-text {
 	display: flex;
 	justify-content: center;
-	font-weight: 700;
 	z-index: 2;
 }
 
@@ -151,9 +150,15 @@ body {
 	margin: 25px 0 20px 20px;
 }
 
+.athlets-wrapper {
+	overflow: hidden;
+}
+
 .athlets-image {
 	display: flex;
 	margin: auto;
+	min-width: 174px;
+	min-height: 281px;
 }
 
 .article-wrapper {
@@ -230,7 +235,7 @@ body {
 	margin-bottom: 27px;
 }
 
-.article-text {
+.athlets-article-text {
 	font-size: 15px;
 	line-height: 18px;
 }
@@ -243,8 +248,29 @@ body {
 	padding-top: 22px;
 }
 
+.players-title {
+	color: #e7e7e7;
+	text-transform: uppercase;
+	font-size: 3.12em;
+	font-weight: 700;
+	margin: 25px 0 10px 20px;
+}
+
+.players-image {
+	display: flex;
+	margin: auto;
+	min-width: 301px;
+	min-height: 248px;
+}
+
+.players-article-text {
+	font-size: 15px;
+	line-height: 18px;
+}
+
 .article-post {
 	padding-bottom: 78px;
+	padding-bottom: 20px;
 }
 
 .purpose-image {
@@ -269,6 +295,7 @@ body {
 .number-item {
 	position: relative;
 	margin: auto;
+	margin-top: 30%;
 	font-size: 14px;
 	color: #ffffff;
 	font-weight: bold;
@@ -298,6 +325,11 @@ body {
 	font-size: 1em;
 }
 
+.purpose-image {
+	min-width: 320px;
+	min-height: 352px;
+}
+
 /*---------/ MAIN -----------*/
 
 /*--------- FOOTER ----------*/
@@ -314,10 +346,9 @@ body {
 	padding-bottom: 5px;
 	position: relative;
 	color: #ffffff;
-	z-index: 1;
 }
 
-.footer::after {
+.footer::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -330,21 +361,23 @@ body {
 }
 
 .footer-logo-frame {
+	position: relative;
+	z-index: 2;
 	display: flex;
 	width: 74px;
 	height: 74px;
 	background-image: linear-gradient(#7756d7, #50379b);
 	border-radius: 12px;
-	z-index: 2;
-	align-self: center;
 	margin-bottom: 60px;
+	margin-left: 38%;
 }
 
 .footer-logo {
-	margin: auto;
 	fill: #ffffff;
 	width: 57px;
 	height: 48px;
+	z-index: 2;
+	margin: auto;
 }
 
 .footer-title-wrapper {
@@ -359,6 +392,7 @@ body {
 	font-size: 2em;
 	font-weight: 700;
 	margin-bottom: 12px;
+	z-index: 2;
 }
 
 .footer-tagline {
@@ -441,28 +475,25 @@ body {
 	}
 
 	/*---- tablet main ----*/
-
 	.athlets {
+		padding-top: 8.46%;
 		position: relative;
 	}
 
 	.athlets-title {
-		position: absolute;
-		top: 10%;
-		left: 42%;
+		margin-top: 0;
+		margin-bottom: 5.2%;
+		margin-left: 42.3%;
 		font-size: 5em;
-		margin: 0;
-		z-index: 3;
 	}
 
 	.athlets-wrapper {
 		display: flex;
-		position: relative;
 	}
 
 	.athlets-image {
 		position: absolute;
-		top: 13%;
+		top: 8%;
 		left: -80px;
 	}
 	
@@ -471,12 +502,14 @@ body {
 	}
 
 	.athlets-content {
+		min-width: 100vw;
 		padding: 44px 0 40px;
 	}
 
 	.athlets-content:first-child {
-		padding-top: 26.7%;
+		padding-top: 0;
 		padding-bottom: 4.68%;
+		background-color: #ffffff;
 }
 
   .athlets-content:nth-child(2) {
@@ -491,6 +524,11 @@ body {
 
 	.athlets-article-container {
 		margin-left: 38%;
+	}
+
+	.athlets-article-text {
+		font-size: 16px;
+		line-height: 24px;
 	}
 
 	.subtitle-wrapper {
@@ -514,21 +552,31 @@ body {
 		font-size: 2em;
 	}
 
-	.player-article-text {
-		font-size: 18px;
-		margin-right: 39%;
-	}
-	
 	.players {
+		padding-top: 8.46%;
 		position: relative;
-		padding-top: 0;
 	}
 
-	.tablet-players-title {
-		left: 3.9%;
+	.players-title {
+		max-width: 43.8%;
+		margin-top: 0;
+		margin-bottom: 5.2%;
+		margin-left: 3.94%;
+		font-size: 5em;
+	}
+
+	.players-article-container {
+		margin-right: 38%;
+	}
+
+	.players-article-text {
+		font-size: 16px;
+		margin-right: 39%;
+		line-height: 24px;
 	}
 
 	.players-image {
+		position: absolute;
 		top: 8.7%;
 		left: 53.64%;
 	}
@@ -552,6 +600,7 @@ body {
 
   .purpose-image {
   	min-width: 768px;
+  	min-height: 586px;
   }
 
   .purpose-text {
@@ -589,15 +638,15 @@ body {
 
 	.footer-title {
 		font-size: 5em;
-		line-height: 60px;
 		letter-spacing: 3px;
-		margin-bottom: 28px;
+		margin-bottom: 7px;
+		line-height: 120px;
 	}
 
 	.footer-tagline {
 		font-size: 2.25em;
-		line-height: 35px;
 		margin: 0 auto;
+		line-height: 54px;
 	}
 
 	.download-wrapper {
@@ -647,12 +696,9 @@ body {
 		margin-top: 222px;
 	}
 
-	.download-link {
-		width: 310px;
-		padding: 16px 0 18px;
-		border-radius: 40px;
-		font-size: 14px;
-	}
+	.download-link:hover {
+		background-color: #5521ef;
+}
 
 	.download-link:first-child {
 		margin-right: 30px;
@@ -670,50 +716,34 @@ body {
 	}
 
 	/*-------------- /header ------------------*/
-	/*---------------- main -------------------*/
+	/*---------------- Desctop main -------------------*/
 
 	.athlets {
+		padding-top: 8.46%;
 		position: relative;
 	}
 
 	.athlets-title {
-		position: absolute;
-		z-index: 3;
-		font-size: 5em;
-		margin-top: 5.88%;
+		margin-top: 0;
+		margin-bottom: 5.2%;
 		margin-left: 52.5%;
-
-	}
-
-	.players {
-		position: relative;
-		padding-top: 0;
-	}
-
-	.tablet-players-title {
-		position: absolute;
-		top: 1.82%;
-		left: 4.16%;
 		font-size: 5em;
-		margin: 80px 0 0 40px;
-		z-index: 3;
+	}
+
+	.athlets-article-text {
+		font-size: 20px;
+		line-height: 30px;
 	}
 
 	.athlets-wrapper {
 		display: flex;
-		position: relative;
 	}
 
 	.athlets-image {
 		position: absolute;
-		top: 25px;
-		left: 20.3%;
+		top: 2.6%;
+		left: 3%;
 		z-index: 3;
-	}
-
-	.players-image {
-		position: absolute;
-		right: 0;
 	}
 	
 	.article-wrapper {
@@ -725,8 +755,8 @@ body {
   }
 
 	.athlets-content:first-child {
-		background-color: #fafafa;
-		padding-top: 14.68%;
+		background-color: #ffffff;
+		padding-top: 0;
 		padding-bottom: 2.8%;
 	}
 
@@ -770,7 +800,53 @@ body {
 		width: 100%;
 		font-size: 1.25em;
 	}
-	
+
+	.players {
+		padding-top: 8.46%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.players-title {
+		max-width: 43.8%;
+		margin-top: 0;
+		margin-bottom: 5.2%;
+		margin-left: 6%;
+		font-size: 5em;
+	}
+
+	.players-image {
+		position: absolute;
+		top: 0;
+		left: 54%;
+	}
+
+	.players-article-container {
+		margin-right: 46.25%;
+	}
+
+	.players-article-text {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.article-post {
+		width: 50%;
+  	padding-bottom: 0;
+  	padding-top: 10.4%;
+  	position: relative;
+  }
+
+  .purpose-image-wrapper {
+  	width: 50%;
+  }
+
+  .purpose-image {
+ 		width: 100%;
+ 		min-width: 480px;
+ 		min-height: 389px;
+ 	}
+
 	.purpose-article-wrapper {
 		position: relative;
 		display: flex;
@@ -781,35 +857,21 @@ body {
 		flex-direction: row-reverse;
 	}
 
-	.players-image {
-		top: 0.2%;
-		left: 42.2%;
+	.square-number-wrapper {
+		position: absolute;
+		top: 53%;
+		left: -10%;
 	}
-
-	.article-post {
-		width: 50%;
-  	padding-bottom: 0;
-  	padding-top: 10.4%;
-  }
-
-  .purpose-image-wrapper {
-  	width: 50%;
-  }
-
-  .purpose-image {
- 		width: 100%;
- 		object-fit: cover;
- 	}
 
 	.square-number {
 		width: 156px;
 		height: 156px;
-		top: 80px;
-		left: -78px;
 	}
 
-	.square-number:nth-child(2) {
-		left: 0;
+	.find {
+		position: absolute;
+		top: 45%;
+		left: 90%;
 	}
 
 	.number-item {
@@ -835,38 +897,47 @@ body {
 	}
 
 	/*-------------- /main ------------------*/
-  /*-------------- footer -----------------*/
+  /*-------------- Desctop footer -----------------*/
 
   .footer {
-  	position: relative;
   	padding-top: 13%;
   }
 
+  .position {
+  	display: flex;
+  	flex-wrap: nowrap;
+  	margin: 0 auto;
+  }
+
   .footer-logo-frame {
-  	position: absolute;
-  	top: 253px;
-  	left: 530px;
-  	width: 132px;
-  	height: 132px;
-  }
-
-  .footer-logo {
-		width: 105px;
-		height: 86px;
-  }
-
-  .footer-title-wrapper {
-  	margin-left: 9.16%;
+  	margin-right: 35px;
+  	margin-bottom: 0;
+  	margin-left: 0;
+  	width: 138px;
+  	height: 138px;
   }
 
   .footer-title {
-  	font-size: 5em;
-  	margin-bottom: 0;
+  	display: flex;
+  	flex-wrap: nowrap;
+  	font-size: 5em; 
   }
 
   .footer-tagline {
-  	font-size: 1.87em;
+  	font-size: 30px;
   }
+
+  .download-link {
+		width: 310px;
+		padding: 16px 0 18px;
+		border-radius: 40px;
+		font-size: 14px;
+		background-color: #5e42b0;
+	}
+
+	.download-link:hover {
+		background: #5521ef;
+}
 
   .download-svg {
   	width: 40px;
@@ -874,6 +945,8 @@ body {
   }
 
 }
+
+/*---@media (min-width: 961px) and (max-width: 1200px)-*/
 
 @media (min-width: 961px) and (max-width: 1200px) {
 	.logo {
@@ -885,33 +958,65 @@ body {
 		margin-left: 70px;
 	}
 
+	.download-link {
+		width: 310px;
+		padding: 16px 0 18px;
+		border-radius: 40px;
+		font-size: 14px;
+		background-color: #5e42b0;
+	}
+
+	.download-link :hover {
+		background-color: #5521ef;
+	}
+
 	.athlets-image {
-		left: 0;
+		left: -50px;
 	}
 
-	.athlets-title {
-		top: -3%;
+	.players {
+		position: relative;
 	}
 
-	.tablet-players-title {
-		margin: 0;
-		top: 6%;
-		left: 6%;
+	.players-image {
+		position: absolute;
+		top: 0;
+		left: 41%;
 	}
 
 	.article-post {
 		padding-top: 0;
+		position: relative;
+		padding-bottom: 10px;
+	}
+
+	.square-number-wrapper {
+		position: absolute;
+		bottom: 60%;
+		left: -83px;
+	}
+
+	.find {
+		position: absolute;
+		left: 84%;
+	}
+
+	.square-number {
+		width: 120px;
+		height: 120px;
 	}
 
 	.purpose-title {
-		margin-bottom: 45px;
+		font-size: 40px;
+		margin-top: 90px;
+		margin-bottom: 35px;
 		margin-left: 50px;
 	}
 
 	.purpose-text {
 		margin-left: 50px;
 	}
-	
+
 	.purpose-article-wrapper:nth-child(2) {
 			display: flex;
 			flex-direction: row;
@@ -933,22 +1038,15 @@ body {
 		order: 1;
 	}
 
-	.footer {
-		padding-top: 26%;
-	}
+/*----------------- footer 768-960 -------------------*/
 
-	.footer-logo-frame {
-  	top: 26%;
-  	left: 10%;
-  }
-
-	.footer-title-wrapper {
-  	margin-left: 17%;
-  }
+	
 
   .footer-logotyp {
   	margin-top: 27%;
   	margin-bottom: 5%;
   }
+
+
 
 }
